@@ -1,0 +1,74 @@
+
+.background-white {
+    background: white;
+}
+.background-light {
+    background: #f8f8f8;
+}
+.background-dark {
+    background: #F0F0F0;
+}
+.sans-serif {
+    font-family: sans-serif;
+}
+.montserrat {
+    font-family: "montserrat", sans-serif;
+}
+.font-bold {
+    font-weight: bold;
+} 
+.text-center {
+    text-align: center;
+}
+.text-white {
+    color: white;
+}
+.text-cyan {
+    color: #56B2A1;
+}
+.text-light {
+    font-weight: normal;
+}
+.align-item {
+    align-items: center;
+}
+.title-1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+.title-2 {
+    font-size: 2rem;
+}
+.title-3 {
+    font-size: 1.5rem;
+}
+.display-flex {
+    display: flex;
+}
+.space-between {
+    justify-content: space-between;
+}
+.size-icon {
+    font-size: 22px;
+    padding-right: 20px; 
+ }
+ .padding-nav {
+     padding-left: 20px;
+ }
+ .space-top {
+     margin-top: 15px;
+ }
+ .list-style-none {
+     list-style: none;
+ }
+ .size-icon-cards {
+     font-size: 25px;
+ }
+ .padding-bottom {
+     padding-bottom: 8px;
+ }
+/* Clase de ayuda */
+.div-border {
+    border: solid 2px;
+    background: red;
+}

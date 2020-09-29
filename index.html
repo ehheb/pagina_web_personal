@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/media-querys.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba11c90b1c.js" crossorigin="anonymous"></script>
+    <script>
+        function openMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hide')
+        }
+    </script>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="container-nav display-flex space-between">
+            <div class="montserrat font-bold nav-font padding-nav">
+                Hebert
+            </div>
+            <div class="desktop-menu">
+                <ul>
+                    <li>
+                        <a href="https://wa.me/526142472325" target="_blank" title="Ir a WhatsApp">
+                            <i class="fab fa-whatsapp-square size-icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:hebertvillarreal1@gmail.com" target="_blank" title="Ir a e-mail">
+                            <i class="fas fa-envelope size-icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/eh_heb" target="_blank" title="Ir a Twitter">
+                            <i class="fab fa-twitter size-icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/eh_heb" target="_blank" title="Ir a Instagram">
+                            <i class="fab fa-instagram-square size-icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" title="Ir a Facebook">
+                            <i class="fab fa-facebook-square size-icon"></i>
+                        </a>
+                    </li>                
+                </ul>
+            </div>
+            <div class="menu-icon" onclick="openMenu()">
+                <i class="fas fa-bars size-icon"></i>    
+            </div>
+        </div>
+        <div id="mobile-menu" class="space-top mobile-menu hide">
+            <ul class="list-style-none">
+                <li>
+                    <a href="https://wa.me/526142472325" target="_blank" title="Ir a WhatsApp">
+                        <i class="fab fa-whatsapp-square size-icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:hebertvillarreal1@gmail.com" target="_blank" title="Ir a e-mail">
+                        <i class="fas fa-envelope size-icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/eh_heb" target="_blank" title="Ir a Twitter">
+                        <i class="fab fa-twitter size-icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/eh_heb" target="_blank" title="Ir a Instagram">
+                        <i class="fab fa-instagram-square size-icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="Ir a Facebook">
+                        <i class="fab fa-facebook-square size-icon"></i>
+                    </a>
+                </li>                
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Sección top -->
+    <section>
+        <div class="main-section">
+            <div class="overlay">
+                <div class="main-div text-center">
+                    <h2 class="montserrat text-white text-light title-2">Me llamo
+                        <span class="text-cyan">Hebert</span>
+                        y soy
+                    </h2>
+                    <h1 class="montserrat text-white title-1">Desarrollador de software</h1> 
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!-- Sección acerca de mi -->
+    <section class="padding-section background-dark">
+        <div class="display-flex-md container align-item">
+            <div class="col-md-9 col-lg-6">
+                <img src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Computadora" class="resize-image">
+            </div>
+            <div class="col-md-12 col-lg-6 background-white">
+                <h3 class="sans-serif title-3">
+                    Sobre mi...
+                </h3>
+                <br>
+                <p class="sans-serif font-bold">
+                    Actualmente me encuentro en la ciudad de Chihuahua, Chihuahua, México, soy un estudiante de tiempo completo, en donde, mi meta principal es desempeñarme de manera exitosa en el campo laboral. Me gusta escuchar música, leer libros, jugar videojuegos, investigar y estudiar temas de mi interés.   
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección cards -->
+    <section class="padding-section background-light text-center">
+        <h2 class="title-2 sans-serif">
+        ¿Qué hago? 
+        </h2>
+        <div class="display-flex-md sans-serif">
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <i class="fas fa-graduation-cap size-icon-cards padding-bottom"></i>
+                    <h3 class="title-3 padding-bottom">Acádemico</h3>
+                    Actualmente me encuentro estudiando el séptimo semestre de la Ing. en desarrollo de software con un buen rendimiento y desempeño académico.
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <i class="fas fa-scroll size-icon-cards padding-bottom"></i>
+                    <h3 class="title-3 padding-bottom">Cursos</h3>
+                    Actualmente estoy tomando un curso en Academlo sobre desarrollo web full-stack y ciencias de la computación. También he tomado varios cursos, tales como, programación orientada a objetos en Java, programación de videojuegos en Unity, curso básico de Python y curso básico de C++. 
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <i class="fas fa-laptop-code size-icon-cards padding-bottom"></i>
+                    <h3 class="title-3 padding-bottom">Experiencia</h3>
+                Por el momento no tengo experiencia en el área laboral, sin embargo, estoy dispuesto a aprender y desarrollar las habilidades necesarias para desempeñarme de manera exitosa.
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <i class="fas fa-folder-plus size-icon-cards padding-bottom"></i>
+                    <h3 class="title-3 padding-bottom">Proyectos</h3>
+                He realizado varios proyectos personales como desarrollador tales como, la creación de una aplicación en Android que automatiza la realización de una llamada en concreto, un videojuego sencillo en Unity, esta página web y varios proyectos escolares.
+                </div>
+            </div>
+        </div>
+    </section>     
+</body>
+</html>

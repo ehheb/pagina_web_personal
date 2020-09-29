@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/* Barra de navegación */
+a {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    background: white;
+    padding: 25px 0px;
+    border-bottom: solid 1px #f8f8f8;
+}
+.desktop-menu li {
+    display: inline-block;
+}
+.nav-font {
+    font-size: 1.2rem;
+}
+.container-nav {
+    width: 88%;
+    margin: auto;
+}
+nav .desktop-menu {
+    display: none;
+}
+.hide {
+    display: none;
+}
+/* Main */
+.main-section {
+    background: #f8f8f8;
+    background-image: url("https://images.pexels.com/photos/270373/pexels-photo-270373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat;
+    height: 100vh; 
+    position: relative;
+}
+.main-section .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.90);
+}
+.main-div {
+    display: flex;  
+    height: 100%; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.container {
+    margin: auto; 
+}
+.resize-image {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+/* Sección de las tarjetas */
+.padding-section {
+    padding-top: 3%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    padding-left: 5%;  
+}
+.card {
+    background: white;
+    height: 100%;
+    transform: scale(1);
+    transition: all 250ms;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    border-radius: 5px;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: all 250ms;
+}
