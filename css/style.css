@@ -84,5 +84,5 @@ nav .desktop-menu {
 }
 .card:hover {
     transform: scale(1.1);
-    transition: all 250ms;
+    transition: all 200ms;
 }
