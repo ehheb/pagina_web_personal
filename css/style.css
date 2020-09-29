@@ -73,6 +73,9 @@ nav .desktop-menu {
     padding-bottom: 3%;
     padding-left: 5%;  
 }
+.h2-padding-bottom {
+    padding-bottom: 2%;
+}
 .card {
     background: white;
     height: 100%;
