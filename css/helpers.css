@@ -29,6 +29,9 @@
 .text-light {
     font-weight: normal;
 }
+.text-green {
+    color: #00ff55;
+}
 .align-item {
     align-items: center;
 }
