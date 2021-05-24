@@ -65,6 +65,22 @@ nav .desktop-menu {
     max-height: 100%;
     vertical-align: middle;
 }
+.cursor {
+    display: inline-flex;
+    width: 3px;
+    background-color: #ccc;
+    font-size: 2rem;
+    margin-left: .1rem;
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0% {background-color: #ccc;}
+    49% {background-color: #ccc;}
+    50% {background-color: transparent;}
+    99% {background-color: transparent;}
+    100% {background-color: #ccc;}
+    
+}
 
 /* Sección de las tarjetas */
 .padding-section {

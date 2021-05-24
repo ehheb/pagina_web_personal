@@ -49,24 +49,24 @@
     justify-content: space-between;
 }
 .size-icon {
-    font-size: 22px;
+    font-size: 25px;
     padding-right: 20px; 
- }
- .padding-nav {
-     padding-left: 20px;
- }
- .space-top {
-     margin-top: 15px;
- }
- .list-style-none {
-     list-style: none;
- }
- .size-icon-cards {
-     font-size: 25px;
- }
- .padding-bottom {
-     padding-bottom: 8px;
- }
+}
+.padding-nav {
+    padding-left: 20px;
+}
+.space-top {
+    margin-top: 15px;
+}
+.list-style-none {
+    list-style: none;
+}
+.size-icon-cards {
+    font-size: 25px;
+}
+.padding-bottom {
+    padding-bottom: 8px;
+}
 /* Clase de ayuda */
 .div-border {
     border: solid 2px;
