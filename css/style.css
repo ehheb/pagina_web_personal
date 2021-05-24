@@ -16,6 +16,10 @@ nav {
     padding: 25px 0px;
     border-bottom: solid 1px #f8f8f8;
 }
+.dark nav {
+    background: #1c1c1c;
+    border-bottom: #343D5B;
+}
 .desktop-menu li {
     display: inline-block;
 }
@@ -32,7 +36,54 @@ nav .desktop-menu {
 .hide {
     display: none;
 }
+/* Switch*/
+.switch {
+    background-color: #343D5B;
+    border-radius: 100px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;    
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+    background-color: #eaeaea;
+    color: #000;
+}
+.switch.active::after {
+    right: 0;
+    left: unset;
+}
+
+.switch span {
+    width: 24px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: #fff;
+}
+.to-black {
+    color: #343d5b;
+}
+
+
 /* Main */
+
 .main-section {
     background: #f8f8f8;
     background-image: url("https://images.pexels.com/photos/270373/pexels-photo-270373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
@@ -42,6 +93,7 @@ nav .desktop-menu {
     height: 100vh; 
     position: relative;
 }
+
 .main-section .overlay {
     position: absolute;
     top: 0;
@@ -57,6 +109,7 @@ nav .desktop-menu {
     justify-content: center;
     align-items: center; 
 }
+
 .container {
     margin: auto; 
 }
@@ -85,6 +138,9 @@ nav .desktop-menu {
     
 }
 
+.dark section {
+    background: #1c1c1c;
+}
 /* Sección de las tarjetas */
 .padding-section {
     padding-top: 4%;
@@ -95,6 +151,9 @@ nav .desktop-menu {
 .h2-padding-bottom {
     padding-bottom: 4%;
 }
+.dark .h2-padding-bottom {
+    color: #eaeaea;
+}
 .card {
     background: white;
     height: 100%;
@@ -104,7 +163,13 @@ nav .desktop-menu {
     padding-bottom: 8%;
     border-radius: 5px;
 }
+.dark .card {
+    color: #eaeaea;
+}
 .card:hover {
     transform: scale(1.1);
     transition: all 200ms;
+}
+.dark .card {
+    background: #303030;
 }

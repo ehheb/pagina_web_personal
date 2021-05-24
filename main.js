@@ -7,7 +7,7 @@ const newTextDelay = 2000;
 let textArrayIndex = 0;
 let charIndex = 0;
 
-
+// Simular que se está escribiendo en el html
 function type() {
     if(charIndex < textArray[textArrayIndex].length) {
         if(!cursorSpan.classList.contains('typing')) cursorSpan.classList.add('typing');
@@ -21,6 +21,7 @@ function type() {
     }
 }
 
+// Simular que se borra en el html
 function erase() {
     if(charIndex > 0) {
         if(!cursorSpan.classList.contains('typing')) cursorSpan.classList.add('typing');
@@ -39,4 +40,11 @@ function erase() {
 document.addEventListener('DOMContentLoaded', function() {
 
     if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+//Crear la funcionalidad para el modo oscuro
+const btnSwitch = document.querySelector('.switch')
+btnSwitch.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    btnSwitch.classList.toggle('active')
 });
