@@ -1,6 +1,6 @@
 const typedText = document.querySelector('.typed-text');
 const cursorSpan = document.querySelector('.cursor');
-const textArray = ['JavaScript', 'HTML', 'CSS', 'Node.js', 'Python', 'Django Rest Framework', 'Java'];
+const textArray = ['JavaScript', 'HTML', 'CSS', 'Node.js', 'Java', 'Python', 'Django Rest Framework'];
 const typingDelay = 100;
 const erasingDelay = 70;
 const newTextDelay = 2000;
@@ -38,12 +38,11 @@ function erase() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-
     if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
 //Crear la funcionalidad para el modo oscuro
-const btnSwitch = document.querySelector('.switch')
+const btnSwitch = document.querySelector('.switch');
 btnSwitch.addEventListener('click', () => {
     document.body.classList.toggle('dark');
     btnSwitch.classList.toggle('active')
