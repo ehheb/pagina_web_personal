@@ -298,7 +298,7 @@ nav .desktop-menu {
 }
 
 /* Media query contacto*/
-@media(min-width: 892px) {
+@media(min-width: 992px) {
     .contact-wrapper {
         padding: 0 4rem;
         display: grid;
