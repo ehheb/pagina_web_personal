@@ -98,13 +98,11 @@ formulario.addEventListener('submit', e => {
             'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
         },
         body: new URLSearchParams(formData).toString(),
-        success: function() {
-            location.reload();
-        }
     })
     .then(res => {
         
         if(res) {
+            formulario.reset()
             alert('Se envío de manera satisfactoria el formulario');
         } else {
             alert('Hubo un problema al envíar el formulario')
