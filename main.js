@@ -69,26 +69,27 @@ formulario.addEventListener('submit', e => {
 
     if(userName.value == '') {
         alert('Debe de ingresar su nombre');
-        return
+        return;
     }
     if(userEmail.value == '' && userPhone.value == '') {
         alert('Debe de ingresar al menos un correo electrónico o un teléfono para poder contactarte');
-        return
+        return;
     }
     if(userMessage.value == '') {
         alert('Debe de ingresar algún mensaje');
-        return
+        return;
     }
     if(!regExpName.test(userName.value)) {
         alert('Su nombre no debe de contener caracteres especiales');
-        return
+        return;
     }
     if(!regExpEmail.test(userEmail.value)) {
         alert('Su correo electrónico no cuenta con el formato correcto');
-        return
+        return;
     }
     if(!regExpPhone.test(userPhone.value)) {
         alert('Su teléfono no cuenta con el formato correcto');
+        return;
     }
 
     const formData = new FormData(formulario);
