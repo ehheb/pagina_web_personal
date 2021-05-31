@@ -57,11 +57,9 @@ const userMessage = document.getElementById('message');
 const formulario = document.getElementById('formulario');
 
 
-
-
 formulario.addEventListener('submit', e => {
     e.preventDefault();
-    console.log('Hola');
+
     let regExpEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}$|^$/
     let regExpName = /^[A-Za-z]*$/
     let regExpPhone = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$|^$/g
@@ -103,7 +101,7 @@ formulario.addEventListener('submit', e => {
     })
     .then(res => {
         if(res) {
-            alert('Funciona');
+            alert('Se envío de manera satisfactoria el formulario');
         }
     });
 });
