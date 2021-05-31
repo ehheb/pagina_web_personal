@@ -215,9 +215,9 @@ nav .desktop-menu {
 .dark .contact-form form input,
 .dark .contact-form form textarea {
     background: #303030;
-    color: white;
-    
+    color: white;   
 }
+
 .dark .contact-form form button {
     background: #0f0f0f;
 

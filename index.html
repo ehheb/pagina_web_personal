@@ -164,29 +164,30 @@
     <div class="contact-wrapper montserrat background-white">
         <div class="contact-form">
             <h3>Contáctame</h3>
-            <form action="POST" data-netlify="true">
+            <!--action="POST" data-netlify="true"-->
+            <form id="form" method='POST' class="form">
                 <p>
                     <label>Nombre</label>
-                    <input class="montserrat" type="text" name="name" id="name">
+                    <input class="montserrat" type="text" name="" id="name">
                 </p>
                 <p>
                     <label>Correo electrónico</label>
-                    <input class="montserrat" type="email" name="email">
+                    <input class="montserrat" type="text" name="email" id="email">
                 </p>
                 <p>
                     <label>Teléfono</label>
-                    <input class="montserrat" type="tel" name="phone">
+                    <input class="montserrat" type="tel" name="phone" id="phone">
                 </p>
                 <p>
                     <label>Asunto</label>
-                    <input class="montserrat" type="text" name="asunto">
+                    <input class="montserrat" type="text" name="asunto" id=asunto>
                 </p>
                 <p class="block">
                     <label>Mensaje</label>
-                    <textarea class="montserrat" name="message" rows="3"></textarea>
+                    <textarea class="montserrat" name="message" id="message" rows="3"></textarea>
                 </p>
                 <p class="block">
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" id="btn">
                     Enviar
                     </button>
                 </p>

@@ -47,3 +47,40 @@ btnSwitch.addEventListener('click', () => {
     document.body.classList.toggle('dark');
     btnSwitch.classList.toggle('active')
 });
+
+//Validar el form
+const userName = document.getElementById("name");
+const userEmail = document.getElementById('email');
+const userPhone = document.getElementById('phone');
+const userAsunto = document.getElementById('asunto');
+const userMessage = document.getElementById('message');
+const form = document.getElementById('form');
+
+
+form.addEventListener("submit", (e) => {
+    let regExpEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}$|^$/
+    let regExpName = /^[A-Za-z]*$/
+    let regExpPhone = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g
+    e.preventDefault();
+
+
+    if(userName.value == '') {
+        alert('Debe de ingresar su nombre');
+    }
+    if(userEmail.value == '' && userPhone.value == '') {
+        alert('Debe de ingresar al menos un correo electrónico o un teléfono para poder contactarte');
+    }
+    if(userMessage.value == '') {
+        alert('Debe de ingresar algún mensaje');
+    }
+    if(!regExpName.test(userName.value)) {
+        alert('Su nombre no debe de contener caracteres especiales');
+    }
+    if(!regExpEmail.test(userEmail.value)) {
+        alert('Su correo electrónico no cuenta con el formato correcto');
+    }
+    if(!regExpPhone.test(userPhone.value)) {
+        alert('Su teléfono no cuenta con el formato correcto');
+    }
+})
+
