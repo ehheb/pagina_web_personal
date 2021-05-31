@@ -98,13 +98,9 @@ formulario.addEventListener('submit', e => {
         },
         body: new URLSearchParams(formData).toString(),
     })
-    .then(res => {
-        
-        if(res) {
-            formulario.reset();
-            alert('Se envío de manera satisfactoria el formulario');
-        } else {
-            alert('Hubo un problema al envíar el formulario')
-        }
-    });
+    .then(() => formulario.reset(), alert('El formulario se envío de manera satisfactoria, en breve me comunicaré contigo')).catch((error) =>
+    alert(error))
 });
+
+
+
