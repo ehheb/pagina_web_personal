@@ -61,7 +61,7 @@ formulario.addEventListener('submit', e => {
     e.preventDefault();
 
     let regExpEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}$|^$/
-    let regExpName = /^[A-Za-z]*$/
+    let regExpName = /^[a-z][a-z\s]*$/
     let regExpPhone = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$|^$/g
 
 
@@ -102,7 +102,7 @@ formulario.addEventListener('submit', e => {
     .then(res => {
         
         if(res) {
-            formulario.reset()
+            formulario.reset();
             alert('Se envío de manera satisfactoria el formulario');
         } else {
             alert('Hubo un problema al envíar el formulario')
