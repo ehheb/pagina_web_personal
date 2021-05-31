@@ -60,7 +60,7 @@ const form = document.getElementById('form');
 form.addEventListener("submit", (e) => {
     let regExpEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}$|^$/
     let regExpName = /^[A-Za-z]*$/
-    let regExpPhone = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g
+    let regExpPhone = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$|^$/g
     e.preventDefault();
 
 
