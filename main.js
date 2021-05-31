@@ -57,7 +57,7 @@ const userMessage = document.getElementById('message');
 const form = document.getElementById('form');
 
 
-form.addEventListener("submit", e => {
+form.addEventListener("POST", e => {
     e.preventDefault();
     let regExpEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}$|^$/
     let regExpName = /^[A-Za-z]*$/
