@@ -57,8 +57,9 @@ const userMessage = document.getElementById('message');
 const form = document.getElementById('form');
 
 
-form.addEventListener("POST", e => {
-    e.preventDefault();
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    
     let regExpEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}$|^$/
     let regExpName = /^[A-Za-z]*$/
     let regExpPhone = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$|^$/g
@@ -83,4 +84,3 @@ form.addEventListener("POST", e => {
         alert('Su teléfono no cuenta con el formato correcto');
     }
 })
-
