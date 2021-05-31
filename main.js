@@ -57,24 +57,10 @@ const userMessage = document.getElementById('message');
 const formulario = document.getElementById('formulario');
 
 
-document.querySelector("form").addEventListener("submit", handleSubmit);
-validation();
-const handleSubmit = (e) => {
+
+
+formulario.addEventListener('submit', e => {
     e.preventDefault();
-
-    let myForm = document.getElementById("formulario");
-    let formData = new formulario(myForm)
-    fetch('/', {
-        method: 'POST',
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString()
-    }).then(() => console.log('Form successfully submitted')).catch((error) =>
-        alert(error))
-
-}
-
-function validation() {
-    
     console.log('Hola');
     let regExpEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}$|^$/
     let regExpName = /^[A-Za-z]*$/
@@ -100,7 +86,36 @@ function validation() {
         alert('Su teléfono no cuenta con el formato correcto');
     }
 
-}
+    const formData = new FormData(formulario);
+    fetch(formulario.getAttribute('action'), {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
+            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+        },
+        body: new URLSearchParams(formData).toString()
+    })
+    .then(res => {
+        if(res) {
+            alert('Funciona');
+        }
+    });
+});
+
+// document.querySelector("form").addEventListener("submit", handleSubmit);
+// const handleSubmit = (e) => {
+//     e.preventDefault();
+
+//     let myForm = document.getElementById("formulario");
+//     let formData = new formulario(myForm)
+//     fetch('/', {
+//         method: 'POST',
+//         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+//         body: new URLSearchParams(formData).toString()
+//     }).then(() => console.log('Form successfully submitted')).catch((error) =>
+//         alert(error))
+
+// }
 
 // formulario.addEventListener("submit", event => {
 //     event.preventDefault();
